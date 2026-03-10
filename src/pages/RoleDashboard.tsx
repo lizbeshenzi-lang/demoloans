@@ -32,7 +32,7 @@ import ClientLoanHistory from "@/components/dashboard/ClientLoanHistory";
 import EnhancedPortfolioAnalytics from "@/components/dashboard/EnhancedPortfolioAnalytics";
 import AdvancedReporting from "@/components/dashboard/AdvancedReporting";
 import { toast } from "sonner";
-import logo from "@/assets/Demo-logo.jpg";
+import logo from "@/assets/kechita-logo.jpg";
 import { exportToCSV, generateLoanReport, downloadReport } from "@/lib/csv-utils";
 import { generateRoleInsights } from "@/lib/generate-insights";
 import {

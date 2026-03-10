@@ -5,7 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import NotificationBell from "@/components/dashboard/NotificationBell";
 import ClientDashboardHome from "@/components/dashboard/ClientDashboardHome";
-import logo from "@/assets/Demo-logo.jpg";
+import logo from "@/assets/kechita-logo.jpg";
 import { toast } from "sonner";
 import { User, FileText, LogOut, Plus, Clock, CheckCircle, AlertCircle, DollarSign, Upload, FileCheck, Loader2, Download, Shield, Home, Rocket } from "lucide-react";
 import CreditScoreDashboard from "@/components/dashboard/CreditScoreDashboard";

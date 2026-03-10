@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import logo from "@/assets/Demo-logo.jpg";
+import logo from "@/assets/kechita-logo.jpg";
 import { Mail, Loader2, ArrowLeft } from "lucide-react";
 
 const ForgotPassword = () => {
