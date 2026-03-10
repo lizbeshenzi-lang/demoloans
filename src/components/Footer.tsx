@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-10">
           <div>
-            <img src={logo} alt="Mular Credit" className="h-14 w-auto mb-4 rounded" />
+            <img src={logo} alt="Demo Credit Limited" className="h-14 w-auto mb-4 rounded" />
             <p className="text-primary-foreground/50 text-sm leading-relaxed font-body max-w-xs">
               Fueling ambitions, building futures. Empowering dreams, breaking barriers through financial inclusion.
             </p>
@@ -36,7 +36,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 mt-10 pt-6 text-center">
           <p className="text-primary-foreground/30 text-sm font-body">
-            © {new Date().getFullYear()} Mular Credit. All rights reserved.
+            © {new Date().getFullYear()} Demo Credit Limited. All rights reserved.
           </p>
         </div>
       </div>

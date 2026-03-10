@@ -12,7 +12,7 @@ const MissionVisionSection = () => {
             Driven by Purpose, Guided by Vision
           </h2>
           <p className="text-muted-foreground text-lg font-body leading-relaxed">
-            At Mular Credit, everything we do is anchored in a clear mission and an ambitious vision for the future of financial inclusion in Kenya.
+            At Demo Credit Limited, everything we do is anchored in a clear mission and an ambitious vision for the future of financial inclusion in Kenya.
           </p>
         </div>
 

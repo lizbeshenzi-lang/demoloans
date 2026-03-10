@@ -28,9 +28,9 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border" aria-label="Main navigation">
       <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-4">
-        <a href="#home" className="flex items-center gap-2" aria-label="Mular Credit - Go to homepage">
+        <a href="#home" className="flex items-center gap-2" aria-label="Demo Credit Limited - Go to homepage">
           <img src={logo} alt="" className="h-12 md:h-14 w-auto" aria-hidden="true" />
-          <span className="sr-only">Mular Credit</span>
+          <span className="sr-only">Demo Credit Limited</span>
         </a>
 
         {/* Desktop */}

@@ -159,8 +159,8 @@ const MyLoans = () => {
       <header className="bg-background shadow-sm">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Mular Credit" className="h-10 w-auto rounded" />
-            <span className="font-display font-bold text-xl text-foreground hidden sm:block">Mular Credit</span>
+            <img src={logo} alt="Demo Credit Limited" className="h-10 w-auto rounded" />
+            <span className="font-display font-bold text-xl text-foreground hidden sm:block">Demo Credit Limited</span>
           </Link>
           <div className="flex items-center gap-2 sm:gap-4">
             {user && <NotificationBell userId={user.id} />}

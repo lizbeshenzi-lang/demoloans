@@ -100,7 +100,7 @@ const Careers = () => {
             Build the Future of <span className="text-primary">Financial Inclusion</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            Join Mular Credit and help empower entrepreneurs across Kenya. We're looking for passionate people who believe in economic opportunity for all.
+            Join Demo Credit Limited and help empower entrepreneurs across Kenya. We're looking for passionate people who believe in economic opportunity for all.
           </p>
           <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-2"><Building2 className="w-4 h-4 text-primary" /> Multiple Locations</div>

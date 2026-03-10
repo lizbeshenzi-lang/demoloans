@@ -8,9 +8,9 @@ import slide4 from "@/assets/hero-slide-4.jpg";
 import slide5 from "@/assets/hero-slide-5.jpg";
 
 const SLIDES = [
-  { img: slide1, caption: "Fueling Ambitions, Building Futures", sub: "Empowering women entrepreneurs and marginalized communities" },
+  { img: slide1, caption: "Fueling Ambitions, Building Futures", sub: "Empowering entrepreneurs and marginalized communities" },
   { img: slide2, caption: "Empowering Dreams, Breaking Barriers", sub: "Digital financial inclusion for every Kenyan" },
-  { img: slide3, caption: "Women-Led Economic Transformation", sub: "73% of our borrowers are women driving change" },
+  { img: slide3, caption: "Women-Led Economic Transformation", sub: "Supporting women entrepreneurs across Kenya" },
   { img: slide4, caption: "Youth Innovation & Enterprise", sub: "Supporting young entrepreneurs aged 18-35" },
   { img: slide5, caption: "Community Wealth Creation", sub: "Building economic ecosystems that lift entire communities" },
 ];

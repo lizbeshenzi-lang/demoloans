@@ -101,10 +101,10 @@ const Signup = () => {
         <div className="bg-background rounded-2xl shadow-elevated p-8">
           <div className="text-center mb-8">
             <Link to="/">
-              <img src={logo} alt="Mular Credit" className="h-16 w-auto mx-auto rounded-lg mb-4" />
+              <img src={logo} alt="Demo Credit Limited" className="h-16 w-auto mx-auto rounded-lg mb-4" />
             </Link>
             <h1 className="text-2xl font-bold font-display text-foreground">Create an Account</h1>
-            <p className="text-muted-foreground font-body mt-1">Join Mular Credit today</p>
+            <p className="text-muted-foreground font-body mt-1">Join Demo Credit Limited today</p>
           </div>
 
           {/* Google Signup */}

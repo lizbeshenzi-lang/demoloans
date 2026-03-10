@@ -144,8 +144,8 @@ const Apply = () => {
       <header className="bg-background shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Mular Credit" className="h-10 w-auto rounded" />
-            <span className="font-display font-bold text-xl text-foreground hidden sm:block">Mular Credit</span>
+            <img src={logo} alt="Demo Credit Limited" className="h-10 w-auto rounded" />
+            <span className="font-display font-bold text-xl text-foreground hidden sm:block">Demo Credit Limited</span>
           </Link>
           <Link to="/my-loans">
             <Button variant="outline" size="sm"><ArrowLeft className="w-4 h-4 mr-2" /> My Loans</Button>
