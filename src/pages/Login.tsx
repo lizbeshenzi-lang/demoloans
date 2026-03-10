@@ -75,7 +75,7 @@ const Login = () => {
         <div className="bg-background rounded-2xl shadow-elevated p-8">
           <div className="text-center mb-8">
             <Link to="/">
-              <img src={logo} alt="Kechita Capital" className="h-16 w-auto mx-auto rounded-lg mb-4" />
+              <img src={logo} alt="Demo Capital" className="h-16 w-auto mx-auto rounded-lg mb-4" />
             </Link>
             <h1 className="text-2xl font-bold font-display text-foreground">Welcome Back</h1>
             <p className="text-muted-foreground font-body mt-1">Sign in to access your account</p>

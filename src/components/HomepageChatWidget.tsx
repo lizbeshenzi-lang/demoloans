@@ -23,7 +23,7 @@ const KNOWLEDGE_BASE: Record<string, string> = {
   "disbursement": "Once approved, funds are sent directly to your **M-Pesa within 24–48 hours**. Our fast scoring speeds up the approval process — many clients get approved the same day they apply!",
   "repayment": "We offer **weekly repayment plans** from 4–12 weeks depending on your product. Payments can be made via M-Pesa. For example, BiashaBoost is ~KES 1,250/week for 6 weeks.",
   "requirements": "You need:\n• Valid Kenyan National ID\n• An active business running for at least 3 months\n• A guarantor\n• A registered M-Pesa line\n\nNo collateral needed for loans under KES 20,000!",
-  "default": "I'm Kechita's virtual assistant! I can help with questions about our loan products, application process, interest rates, and more. What would you like to know?",
+  "default": "I'm Demo's virtual assistant! I can help with questions about our loan products, application process, interest rates, and more. What would you like to know?",
 };
 
 function findAnswer(query: string): string {
@@ -83,7 +83,7 @@ const HomepageChatWidget = () => {
         <div className="flex items-center gap-2 text-primary-foreground">
           <MessageSquare className="w-5 h-5" />
           <div>
-            <span className="font-display font-bold text-sm block">Kechita Assistant</span>
+            <span className="font-display font-bold text-sm block">Demo Assistant</span>
             <span className="text-[10px] text-primary-foreground/70">Ask us anything</span>
           </div>
         </div>
@@ -98,7 +98,7 @@ const HomepageChatWidget = () => {
           <div className="space-y-3">
             <div className="bg-muted rounded-xl px-3 py-2 rounded-bl-sm max-w-[85%]">
               <p className="text-sm text-foreground font-body">
-                👋 Hi! I'm Kechita's virtual assistant. How can I help you today?
+                👋 Hi! I'm Demo's virtual assistant. How can I help you today?
               </p>
             </div>
             <div className="space-y-2">

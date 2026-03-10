@@ -7,8 +7,8 @@ import { Copy, Check, Printer, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "@/hooks/use-toast";
 
-const PASSWORD = "Kechita2026!";
-const LOGIN_URL = "https://kechita-growth-hub.lovable.app/login";
+const PASSWORD = "Demo2026!";
+const LOGIN_URL = "https://Demo-growth-hub.lovable.app/login";
 
 interface Credential {
   role: string;
@@ -20,58 +20,58 @@ interface Credential {
 const credentials: Credential[] = [
   // Executive
   { tier: "Executive", role: "System Admin", name: "Admin", email: "admin@test.com" },
-  { tier: "Executive", role: "CEO", name: "James Mwangi", email: "ceo@kechita.test" },
-  { tier: "Executive", role: "General Manager", name: "Faith Wanjiku", email: "gm@kechita.test" },
-  { tier: "Executive", role: "Marketing Lead", name: "Sarah Wanjiku", email: "marketing@kechita.test" },
+  { tier: "Executive", role: "CEO", name: "James Mwangi", email: "ceo@Demo.test" },
+  { tier: "Executive", role: "General Manager", name: "Faith Wanjiku", email: "gm@Demo.test" },
+  { tier: "Executive", role: "Marketing Lead", name: "Sarah Wanjiku", email: "marketing@Demo.test" },
   // Regional Managers
-  { tier: "Regional Managers", role: "RM - Nairobi", name: "Peter Ochieng", email: "rm.nairobi@kechita.test" },
-  { tier: "Regional Managers", role: "RM - Central", name: "Grace Muthoni", email: "rm.central@kechita.test" },
-  { tier: "Regional Managers", role: "RM - Coast", name: "Hassan Omar", email: "rm.coast@kechita.test" },
-  { tier: "Regional Managers", role: "RM - Western", name: "Victor Wanyama", email: "rm.western@kechita.test" },
-  { tier: "Regional Managers", role: "RM - Rift Valley", name: "Gladys Cherono", email: "rm.riftvalley@kechita.test" },
-  { tier: "Regional Managers", role: "RM - Eastern", name: "Timothy Muturi", email: "rm.eastern@kechita.test" },
-  { tier: "Regional Managers", role: "RM - North Eastern", name: "Abdi Noor", email: "rm.northeastern@kechita.test" },
+  { tier: "Regional Managers", role: "RM - Nairobi", name: "Peter Ochieng", email: "rm.nairobi@Demo.test" },
+  { tier: "Regional Managers", role: "RM - Central", name: "Grace Muthoni", email: "rm.central@Demo.test" },
+  { tier: "Regional Managers", role: "RM - Coast", name: "Hassan Omar", email: "rm.coast@Demo.test" },
+  { tier: "Regional Managers", role: "RM - Western", name: "Victor Wanyama", email: "rm.western@Demo.test" },
+  { tier: "Regional Managers", role: "RM - Rift Valley", name: "Gladys Cherono", email: "rm.riftvalley@Demo.test" },
+  { tier: "Regional Managers", role: "RM - Eastern", name: "Timothy Muturi", email: "rm.eastern@Demo.test" },
+  { tier: "Regional Managers", role: "RM - North Eastern", name: "Abdi Noor", email: "rm.northeastern@Demo.test" },
   // Branch Managers
-  { tier: "Branch Managers", role: "BM - Westlands", name: "Alice Kamau", email: "bm.westlands@kechita.test" },
-  { tier: "Branch Managers", role: "BM - CBD", name: "David Njoroge", email: "bm.cbd@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Eastlands", name: "Esther Wambui", email: "bm.eastlands@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Karen", name: "Samuel Kipchoge", email: "bm.karen@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Mombasa", name: "Amina Said", email: "bm.mombasa@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Kisumu", name: "Otieno Ouma", email: "bm.kisumu@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Nakuru", name: "Lydia Chebet", email: "bm.nakuru@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Nyeri", name: "John Kariuki", email: "bm.nyeri@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Eldoret", name: "Margaret Jeptoo", email: "bm.eldoret@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Thika", name: "Francis Muturi", email: "bm.thika@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Malindi", name: "Fatuma Ali", email: "bm.malindi@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Kakamega", name: "Wycliffe Barasa", email: "bm.kakamega@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Bungoma", name: "Josephine Nafula", email: "bm.bungoma@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Vihiga", name: "Cleophas Shimoli", email: "bm.vihiga@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Busia", name: "Rosaline Akoth", email: "bm.busia@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Narok", name: "Lemayian Saitoti", email: "bm.narok@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Kericho", name: "Hellen Chepkemoi", email: "bm.kericho@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Bomet", name: "Kipkirui Bett", email: "bm.bomet@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Kajiado", name: "Nashipai Olenguruone", email: "bm.kajiado@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Machakos", name: "Benedicta Mwikali", email: "bm.machakos@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Kitui", name: "Musyoka Ndunda", email: "bm.kitui@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Embu", name: "Njiru Karimi", email: "bm.embu@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Meru", name: "Mugambi Kiome", email: "bm.meru@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Garissa", name: "Ahmed Hassan", email: "bm.garissa@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Wajir", name: "Halima Abdirahman", email: "bm.wajir@kechita.test" },
-  { tier: "Branch Managers", role: "BM - Isiolo", name: "Dida Roba", email: "bm.isiolo@kechita.test" },
+  { tier: "Branch Managers", role: "BM - Westlands", name: "Alice Kamau", email: "bm.westlands@Demo.test" },
+  { tier: "Branch Managers", role: "BM - CBD", name: "David Njoroge", email: "bm.cbd@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Eastlands", name: "Esther Wambui", email: "bm.eastlands@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Karen", name: "Samuel Kipchoge", email: "bm.karen@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Mombasa", name: "Amina Said", email: "bm.mombasa@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Kisumu", name: "Otieno Ouma", email: "bm.kisumu@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Nakuru", name: "Lydia Chebet", email: "bm.nakuru@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Nyeri", name: "John Kariuki", email: "bm.nyeri@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Eldoret", name: "Margaret Jeptoo", email: "bm.eldoret@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Thika", name: "Francis Muturi", email: "bm.thika@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Malindi", name: "Fatuma Ali", email: "bm.malindi@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Kakamega", name: "Wycliffe Barasa", email: "bm.kakamega@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Bungoma", name: "Josephine Nafula", email: "bm.bungoma@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Vihiga", name: "Cleophas Shimoli", email: "bm.vihiga@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Busia", name: "Rosaline Akoth", email: "bm.busia@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Narok", name: "Lemayian Saitoti", email: "bm.narok@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Kericho", name: "Hellen Chepkemoi", email: "bm.kericho@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Bomet", name: "Kipkirui Bett", email: "bm.bomet@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Kajiado", name: "Nashipai Olenguruone", email: "bm.kajiado@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Machakos", name: "Benedicta Mwikali", email: "bm.machakos@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Kitui", name: "Musyoka Ndunda", email: "bm.kitui@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Embu", name: "Njiru Karimi", email: "bm.embu@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Meru", name: "Mugambi Kiome", email: "bm.meru@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Garissa", name: "Ahmed Hassan", email: "bm.garissa@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Wajir", name: "Halima Abdirahman", email: "bm.wajir@Demo.test" },
+  { tier: "Branch Managers", role: "BM - Isiolo", name: "Dida Roba", email: "bm.isiolo@Demo.test" },
   // Loan Officers (sample)
-  { tier: "Loan Officers", role: "LO - Westlands 1", name: "Catherine Njeri", email: "lo.westlands1@kechita.test" },
-  { tier: "Loan Officers", role: "LO - Westlands 2", name: "Brian Mutua", email: "lo.westlands2@kechita.test" },
-  { tier: "Loan Officers", role: "LO - CBD 1", name: "Diana Achieng", email: "lo.cbd1@kechita.test" },
-  { tier: "Loan Officers", role: "LO - CBD 2", name: "Kevin Otieno", email: "lo.cbd2@kechita.test" },
+  { tier: "Loan Officers", role: "LO - Westlands 1", name: "Catherine Njeri", email: "lo.westlands1@Demo.test" },
+  { tier: "Loan Officers", role: "LO - Westlands 2", name: "Brian Mutua", email: "lo.westlands2@Demo.test" },
+  { tier: "Loan Officers", role: "LO - CBD 1", name: "Diana Achieng", email: "lo.cbd1@Demo.test" },
+  { tier: "Loan Officers", role: "LO - CBD 2", name: "Kevin Otieno", email: "lo.cbd2@Demo.test" },
   // Client
-  { tier: "Clients", role: "Sample Client", name: "Test Client", email: "client01@kechita.test" },
+  { tier: "Clients", role: "Sample Client", name: "Test Client", email: "client01@Demo.test" },
 ];
 
-const announcementMessage = `Subject: Kechita Capital Digital Transformation — New Platform Access
+const announcementMessage = `Subject: Demo Capital Digital Transformation — New Platform Access
 
 Dear Team,
 
-I am pleased to announce that Kechita Capital is embracing a new digital era. We have launched the Kechita Growth Hub, a modern platform that will streamline our loan operations, client management, reporting, and internal communications across all 7 regions and 26 branches.
+I am pleased to announce that Demo Capital is embracing a new digital era. We have launched the Demo Growth Hub, a modern platform that will streamline our loan operations, client management, reporting, and internal communications across all 7 regions and 26 branches.
 
 The platform is currently in TESTING PHASE and we need each of you to log in, explore your dashboard, and provide feedback.
 
@@ -85,26 +85,26 @@ How to log in:
 ————————————————
 
 CEO — James Mwangi
-Email: ceo@kechita.test | Password: ${PASSWORD}
+Email: ceo@Demo.test | Password: ${PASSWORD}
 
 General Manager — Faith Wanjiku
-Email: gm@kechita.test | Password: ${PASSWORD}
+Email: gm@Demo.test | Password: ${PASSWORD}
 
 Marketing Lead — Sarah Wanjiku
-Email: marketing@kechita.test | Password: ${PASSWORD}
+Email: marketing@Demo.test | Password: ${PASSWORD}
 
 ————————————————
 
 Regional Managers:
-• Nairobi — Peter Ochieng: rm.nairobi@kechita.test
-• Central — Grace Muthoni: rm.central@kechita.test
-• Coast — Hassan Omar: rm.coast@kechita.test
-• Western — Victor Wanyama: rm.western@kechita.test
-• Rift Valley — Gladys Cherono: rm.riftvalley@kechita.test
-• Eastern — Timothy Muturi: rm.eastern@kechita.test
-• North Eastern — Abdi Noor: rm.northeastern@kechita.test
+• Nairobi — Peter Ochieng: rm.nairobi@Demo.test
+• Central — Grace Muthoni: rm.central@Demo.test
+• Coast — Hassan Omar: rm.coast@Demo.test
+• Western — Victor Wanyama: rm.western@Demo.test
+• Rift Valley — Gladys Cherono: rm.riftvalley@Demo.test
+• Eastern — Timothy Muturi: rm.eastern@Demo.test
+• North Eastern — Abdi Noor: rm.northeastern@Demo.test
 
-Branch Managers (email format: bm.[branch]@kechita.test):
+Branch Managers (email format: bm.[branch]@Demo.test):
 • Westlands — Alice Kamau | CBD — David Njoroge | Eastlands — Esther Wambui
 • Karen — Samuel Kipchoge | Nakuru — Lydia Chebet | Nyeri — John Kariuki
 • Eldoret — Margaret Jeptoo | Thika — Francis Muturi | Mombasa — Amina Said
@@ -115,8 +115,8 @@ Branch Managers (email format: bm.[branch]@kechita.test):
 • Embu — Njiru Karimi | Meru — Mugambi Kiome | Garissa — Ahmed Hassan
 • Wajir — Halima Abdirahman | Isiolo — Dida Roba
 
-Loan Officers (email format: lo.[branch][1 or 2]@kechita.test):
-Two officers per branch. Example: lo.westlands1@kechita.test, lo.mombasa2@kechita.test
+Loan Officers (email format: lo.[branch][1 or 2]@Demo.test):
+Two officers per branch. Example: lo.westlands1@Demo.test, lo.mombasa2@Demo.test
 
 All passwords: ${PASSWORD}
 
@@ -129,7 +129,7 @@ What to do:
 
 IMPORTANT: This is a testing environment. Please do not enter real client data yet. We will announce the go-live date separately.
 
-Welcome to the future of Kechita Capital.
+Welcome to the future of Demo Capital.
 
 — Management`;
 
@@ -180,7 +180,7 @@ const Credentials = () => {
         </div>
 
         <div className="text-center space-y-1">
-          <h1 className="text-3xl font-bold text-foreground">Kechita Growth Hub — Staff Credentials</h1>
+          <h1 className="text-3xl font-bold text-foreground">Demo Growth Hub — Staff Credentials</h1>
           <p className="text-muted-foreground">Testing Phase • All accounts use password: <code className="bg-muted px-2 py-0.5 rounded font-mono text-sm">{PASSWORD}</code></p>
           <p className="text-muted-foreground text-sm">Login: <a href={LOGIN_URL} className="text-primary underline">{LOGIN_URL}</a></p>
         </div>
@@ -220,7 +220,7 @@ const Credentials = () => {
                 </Table>
                 {tier === "Loan Officers" && (
                   <p className="text-xs text-muted-foreground mt-1 ml-1">
-                    + 48 more loan officers (2 per branch). Format: lo.[branch][1/2]@kechita.test
+                    + 48 more loan officers (2 per branch). Format: lo.[branch][1/2]@Demo.test
                   </p>
                 )}
               </div>

@@ -10,7 +10,7 @@ import slide5 from "@/assets/hero-slide-5.jpg";
 const SLIDES = [
   { img: slide1, caption: "Fueling Ambitions, Building Futures", sub: "Empowering entrepreneurs and marginalized communities" },
   { img: slide2, caption: "Empowering Dreams, Breaking Barriers", sub: "Digital financial inclusion for every Kenyan" },
-  { img: slide3, caption: "Women-Led Economic Transformation", sub: "Supporting women entrepreneurs across Kenya" },
+  { img: slide3, caption: "Women-Led Economic Transformation", sub: "73% of our borrowers are women driving change" },
   { img: slide4, caption: "Youth Innovation & Enterprise", sub: "Supporting young entrepreneurs aged 18-35" },
   { img: slide5, caption: "Community Wealth Creation", sub: "Building economic ecosystems that lift entire communities" },
 ];
@@ -76,7 +76,7 @@ const HeroSection = () => {
         ))}
 
         {/* Bottom caption bar — sits at the bottom, semi-transparent for legibility but NOT covering the image */}
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-mular-navy/80 via-mular-navy/40 to-transparent pt-20 pb-6 px-6 md:px-12">
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-demo-navy/80 via-demo-navy/40 to-transparent pt-20 pb-6 px-6 md:px-12">
           <div className="container mx-auto flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
               <h2

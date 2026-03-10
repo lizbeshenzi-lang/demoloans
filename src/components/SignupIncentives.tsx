@@ -44,7 +44,7 @@ const incentives = [
 
 const testimonials = [
   { name: "Grace Wanjiku", biz: "Mama Mboga, Westlands", text: "I got my first loan of KES 8,000 in just one day. Now I'm on my third cycle at KES 25,000!" },
-  { name: "James Otieno", biz: "Boda Boda, Kisumu", text: "The weekly payments are so manageable. No stress, no pressure. Kechita understands small business." },
+  { name: "James Otieno", biz: "Boda Boda, Kisumu", text: "The weekly payments are so manageable. No stress, no pressure. Demo understands small business." },
   { name: "Fatuma Hassan", biz: "Tailor, Mombasa", text: "My loan officer checks on me every week. It feels like they genuinely want me to succeed." },
 ];
 
@@ -54,13 +54,13 @@ const SignupIncentives = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <div className="inline-flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-1.5 rounded-full text-sm font-medium mb-4">
-            <Star className="w-4 h-4" /> Why Join Kechita Capital
+            <Star className="w-4 h-4" /> Why Join Demo Capital
           </div>
           <h2 className="text-3xl md:text-4xl font-bold font-display text-foreground mb-4">
             Start Growing Your Business <span className="text-gradient-primary">Today</span>
           </h2>
           <p className="text-muted-foreground font-body max-w-2xl mx-auto">
-            Hundreds of entrepreneurs have already transformed their businesses with Kechita. Here's what's waiting for you.
+            Hundreds of entrepreneurs have already transformed their businesses with Demo. Here's what's waiting for you.
           </p>
         </div>
 

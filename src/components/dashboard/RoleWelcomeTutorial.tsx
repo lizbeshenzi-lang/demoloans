@@ -103,7 +103,7 @@ const ROLE_TUTORIALS: Record<string, { welcome: string; steps: TutorialStep[] }>
     ],
   },
   user: {
-    welcome: "Welcome to Kechita Capital",
+    welcome: "Welcome to Demo Capital",
     steps: [
       { key: "home", icon: Home, title: "Your Dashboard", description: "Your personal hub showing active loans, repayment progress, and credit score. Everything about your financial journey in one place.", color: "from-primary to-primary/70" },
       { key: "loans", icon: FileText, title: "My Loan Applications", description: "View all your loan applications — pending, approved, disbursed, and completed. Track the status of each application in real time.", color: "from-blue-500 to-blue-400" },
@@ -121,7 +121,7 @@ interface RoleWelcomeTutorialProps {
   restartTrigger?: number;
 }
 
-const STORAGE_KEY = "kechita_tutorial_completed";
+const STORAGE_KEY = "Demo_tutorial_completed";
 
 export const resetTutorial = (role: string, userId: string) => {
   localStorage.removeItem(`${STORAGE_KEY}_${role}_${userId}`);

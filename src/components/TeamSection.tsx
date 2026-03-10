@@ -11,7 +11,7 @@ const founder = {
   name: "Simon Mutunga",
   role: "Founder & Chief Executive Officer",
   img: teamCeo,
-  bio: "A visionary leader with over 15 years in financial services across East Africa, Simon founded Kechita Capital with a singular mission: to democratize access to capital for everyday entrepreneurs. His relentless drive to empower underserved communities has transformed Kechita from a single-branch operation into a nationwide force powering over 3,000 businesses. Under his leadership, Kechita has disbursed over KSh 300 million and earned a reputation as the most trusted micro-lending partner in Kenya. Simon's philosophy is simple — when you invest in people, the returns are limitless.",
+  bio: "A visionary leader with over 15 years in financial services across East Africa, Simon founded Demo Capital with a singular mission: to democratize access to capital for everyday entrepreneurs. His relentless drive to empower underserved communities has transformed Demo from a single-branch operation into a nationwide force powering over 3,000 businesses. Under his leadership, Demo has disbursed over KSh 300 million and earned a reputation as the most trusted micro-lending partner in Kenya. Simon's philosophy is simple — when you invest in people, the returns are limitless.",
 };
 
 const team = [
@@ -25,7 +25,7 @@ const team = [
     name: "Daniel Kamau",
     role: "Chief Financial Officer",
     img: teamCfo,
-    bio: "Manages financial strategy and risk, keeping Kechita's growth sustainable and investor-ready.",
+    bio: "Manages financial strategy and risk, keeping Demo's growth sustainable and investor-ready.",
   },
   {
     name: "Agnes Nyambura",
@@ -37,7 +37,7 @@ const team = [
     name: "Kevin Otieno",
     role: "Head of Technology",
     img: teamTech,
-    bio: "Architects the digital platforms powering Kechita's 1–3 hour disbursement promise.",
+    bio: "Architects the digital platforms powering Demo's 1–3 hour disbursement promise.",
   },
   {
     name: "Sarah Wanjiku",

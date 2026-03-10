@@ -46,14 +46,14 @@ const MissionVisionSection = () => {
             </ul>
           </div>
           <div className="rounded-2xl overflow-hidden shadow-elevated">
-            <img src={missionTeam} alt="Kechita Capital team working together" className="w-full h-[400px] md:h-[480px] object-cover" />
+            <img src={missionTeam} alt="Demo Capital team working together" className="w-full h-[400px] md:h-[480px] object-cover" />
           </div>
         </div>
 
         {/* Vision */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-elevated">
-            <img src={communityWomen} alt="Women entrepreneurs empowered by Kechita Capital" className="w-full h-[400px] md:h-[480px] object-cover" />
+            <img src={communityWomen} alt="Women entrepreneurs empowered by Demo Capital" className="w-full h-[400px] md:h-[480px] object-cover" />
           </div>
           <div className="order-1 lg:order-2">
             <div className="flex items-center gap-3 mb-4">
@@ -69,13 +69,13 @@ const MissionVisionSection = () => {
               We envision a future where every hardworking entrepreneur has access to the capital and support they need to turn their aspirations into thriving businesses. A future where financial services are not a barrier, but a bridge — connecting ambition to achievement.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6 font-body">
-              We dream of communities where small businesses flourish, families prosper, and economies grow stronger from the ground up. Kechita Capital is working every day to make that vision a reality, one entrepreneur at a time.
+              We dream of communities where small businesses flourish, families prosper, and economies grow stronger from the ground up. Demo Capital is working every day to make that vision a reality, one entrepreneur at a time.
             </p>
             <div className="bg-warm p-6 rounded-xl border border-border">
               <p className="text-foreground font-display text-xl italic leading-relaxed">
                 "When entrepreneurs succeed, entire communities rise. That's the future we're building."
               </p>
-              <p className="text-muted-foreground text-sm mt-2 font-body">— Kechita Capital Leadership</p>
+              <p className="text-muted-foreground text-sm mt-2 font-body">— Demo Capital Leadership</p>
             </div>
           </div>
         </div>

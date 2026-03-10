@@ -32,7 +32,7 @@ import ClientLoanHistory from "@/components/dashboard/ClientLoanHistory";
 import EnhancedPortfolioAnalytics from "@/components/dashboard/EnhancedPortfolioAnalytics";
 import AdvancedReporting from "@/components/dashboard/AdvancedReporting";
 import { toast } from "sonner";
-import logo from "@/assets/kechita-logo.jpg";
+import logo from "@/assets/Demo-logo.jpg";
 import { exportToCSV, generateLoanReport, downloadReport } from "@/lib/csv-utils";
 import { generateRoleInsights } from "@/lib/generate-insights";
 import {
@@ -239,7 +239,7 @@ const RoleDashboard = () => {
   };
 
   const handleDownloadReport = () => {
-    const report = generateLoanReport(loans, repayments, `KECHITA CAPITAL — ${getRoleLabel().toUpperCase()} REPORT`);
+    const report = generateLoanReport(loans, repayments, `Demo CAPITAL — ${getRoleLabel().toUpperCase()} REPORT`);
     downloadReport(report, "portfolio-report.txt");
     toast.success("Report downloaded");
   };
@@ -355,8 +355,8 @@ const RoleDashboard = () => {
       <header className="bg-background shadow-sm border-b border-border sticky top-0 z-30">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Kechita Capital" className="h-9 w-auto rounded" />
-            <span className="font-display font-bold text-lg text-foreground hidden sm:block">Kechita Capital</span>
+            <img src={logo} alt="Demo Capital" className="h-9 w-auto rounded" />
+            <span className="font-display font-bold text-lg text-foreground hidden sm:block">Demo Capital</span>
           </Link>
           <div className="flex items-center gap-2 sm:gap-4">
             <div className="text-right hidden sm:block">

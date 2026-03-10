@@ -158,7 +158,7 @@ const InterviewRoom = () => {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center space-y-4">
-          <img src={logo} alt="Kechita" className="h-12 mx-auto rounded" />
+          <img src={logo} alt="Demo" className="h-12 mx-auto rounded" />
           <h1 className="text-2xl font-bold font-display text-foreground">Interview Ended</h1>
           <p className="text-muted-foreground">Thank you for participating.</p>
           <Link to="/"><Button>Back to Home</Button></Link>
@@ -172,7 +172,7 @@ const InterviewRoom = () => {
       {/* Header */}
       <header className="bg-zinc-900 border-b border-zinc-800 px-4 py-2 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <img src={logo} alt="Kechita" className="h-7 rounded" />
+          <img src={logo} alt="Demo" className="h-7 rounded" />
           <span className="text-sm font-medium text-zinc-300">Interview Room</span>
         </div>
         <div className="flex items-center gap-2">

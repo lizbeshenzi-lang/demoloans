@@ -76,7 +76,7 @@ const MarketingReports = ({ loans, repayments, branches, regions, campaigns }: P
           // Generate a comprehensive text report
           const lines = [
             "═══════════════════════════════════════════════════════",
-            "   KECHITA CAPITAL — MARKETING INTELLIGENCE REPORT",
+            "   Demo CAPITAL — MARKETING INTELLIGENCE REPORT",
             `   Generated: ${new Date().toLocaleString()}`,
             "═══════════════════════════════════════════════════════",
             "",

@@ -58,12 +58,12 @@ const RECURRENCE_OPTIONS = [
 
 const TEMPLATES: Record<string, string[]> = {
   marketing: [
-    "Dear {name}, exciting news from Kechita Capital! We have new financing products tailored for your business. Visit us or call for more info.",
-    "Hi {name}, grow your business with Kechita Capital's flexible financing options. Apply today for quick processing!",
+    "Dear {name}, exciting news from Demo Capital! We have new financing products tailored for your business. Visit us or call for more info.",
+    "Hi {name}, grow your business with Demo Capital's flexible financing options. Apply today for quick processing!",
   ],
   onboarding: [
-    "Welcome to Kechita Capital, {name}! Your account has been set up. Your Loan Officer will contact you shortly to guide you through the process.",
-    "Hi {name}, thank you for choosing Kechita Capital. Please ensure your KYC documents are ready for verification.",
+    "Welcome to Demo Capital, {name}! Your account has been set up. Your Loan Officer will contact you shortly to guide you through the process.",
+    "Hi {name}, thank you for choosing Demo Capital. Please ensure your KYC documents are ready for verification.",
   ],
   reminder: [
     "Dear {name}, this is a friendly reminder that your repayment is due soon. Please ensure timely payment to maintain your good standing.",
@@ -71,7 +71,7 @@ const TEMPLATES: Record<string, string[]> = {
   ],
   recovery: [
     "Dear {name}, your repayment is overdue. Please make your payment immediately to avoid penalties. Contact your Loan Officer if you need assistance.",
-    "URGENT: {name}, your Kechita Capital repayment is past due. Please settle your account or contact us at your earliest convenience.",
+    "URGENT: {name}, your Demo Capital repayment is past due. Please settle your account or contact us at your earliest convenience.",
   ],
   updates: [
     "Hi {name}, your loan application status has been updated. Please log in to your account or contact your Loan Officer for details.",

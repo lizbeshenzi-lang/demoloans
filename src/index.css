@@ -37,13 +37,13 @@
     --radius: 0.625rem;
 
     /* Custom tokens */
-    --mular-green: 142 76% 36%;
-    --mular-green-dark: 142 76% 26%;
-    --mular-blue: 204 80% 48%;
-    --mular-blue-dark: 204 80% 38%;
-    --mular-navy: 210 40% 15%;
-    --mular-warm-gray: 30 10% 96%;
-    --mular-warm-gray-dark: 30 8% 88%;
+    --demo-green: 142 76% 36%;
+    --demo-green-dark: 142 76% 26%;
+    --demo-blue: 204 80% 48%;
+    --demo-blue-dark: 204 80% 38%;
+    --demo-navy: 210 40% 15%;
+    --demo-warm-gray: 30 10% 96%;
+    --demo-warm-gray-dark: 30 8% 88%;
 
     --gradient-primary: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 26%));
     --gradient-blue: linear-gradient(135deg, hsl(204 80% 48%), hsl(204 80% 38%));

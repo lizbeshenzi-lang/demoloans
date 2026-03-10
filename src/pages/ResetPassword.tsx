@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import logo from "@/assets/kechita-logo.jpg";
+import logo from "@/assets/Demo-logo.jpg";
 import { Lock, Loader2, Eye, EyeOff, CheckCircle2, XCircle } from "lucide-react";
 
 const strengthRules = [
@@ -99,7 +99,7 @@ const ResetPassword = () => {
         <div className="w-full max-w-md">
           <div className="bg-background rounded-2xl shadow-elevated p-8 text-center">
             <Link to="/">
-              <img src={logo} alt="Kechita Capital" className="h-16 w-auto mx-auto rounded-lg mb-6" />
+              <img src={logo} alt="Demo Capital" className="h-16 w-auto mx-auto rounded-lg mb-6" />
             </Link>
             <div className="w-16 h-16 bg-destructive/10 rounded-full flex items-center justify-center mx-auto mb-4">
               <XCircle className="w-8 h-8 text-destructive" />
@@ -127,7 +127,7 @@ const ResetPassword = () => {
         <div className="w-full max-w-md">
           <div className="bg-background rounded-2xl shadow-elevated p-8 text-center">
             <Link to="/">
-              <img src={logo} alt="Kechita Capital" className="h-16 w-auto mx-auto rounded-lg mb-6" />
+              <img src={logo} alt="Demo Capital" className="h-16 w-auto mx-auto rounded-lg mb-6" />
             </Link>
             <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
               <CheckCircle2 className="w-8 h-8 text-secondary" />
@@ -151,7 +151,7 @@ const ResetPassword = () => {
         <div className="bg-background rounded-2xl shadow-elevated p-8">
           <div className="text-center mb-8">
             <Link to="/">
-              <img src={logo} alt="Kechita Capital" className="h-16 w-auto mx-auto rounded-lg mb-4" />
+              <img src={logo} alt="Demo Capital" className="h-16 w-auto mx-auto rounded-lg mb-4" />
             </Link>
             <h1 className="text-2xl font-bold font-display text-foreground">Set New Password</h1>
             <p className="text-muted-foreground font-body mt-1">Choose a strong password for your account</p>

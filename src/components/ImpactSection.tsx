@@ -4,31 +4,31 @@ import { Quote, TrendingUp, Users, Briefcase, MapPin } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Kechita Capital believed in my small shop when no one else would. They gave me my first loan of KSh 150,000 and today, I have two branches and employ five people. They didn't just give me money — they gave me hope.",
+    quote: "Demo Capital believed in my small shop when no one else would. They gave me my first loan of KSh 150,000 and today, I have two branches and employ five people. They didn't just give me money — they gave me hope.",
     name: "Grace Wanjiku",
     role: "Retail Shop Owner, Nairobi",
     growth: "Grew from 1 to 2 branches",
   },
   {
-    quote: "The process was simple and transparent. I got my working capital within three days and was able to stock up for the festive season. My sales doubled that month. I've been a Kechita client for four years now and I keep coming back.",
+    quote: "The process was simple and transparent. I got my working capital within three days and was able to stock up for the festive season. My sales doubled that month. I've been a Demo client for four years now and I keep coming back.",
     name: "James Ochieng",
     role: "Market Trader, Kisumu",
     growth: "Sales doubled in first month",
   },
   {
-    quote: "They don't just give you money — they genuinely care about your business success. The financial literacy training helped me understand how to manage my cash flow properly. That's what makes Kechita different from any other lender.",
+    quote: "They don't just give you money — they genuinely care about your business success. The financial literacy training helped me understand how to manage my cash flow properly. That's what makes Demo different from any other lender.",
     name: "Sarah Njeri",
     role: "Food Vendor, Nakuru",
     growth: "Expanded to catering services",
   },
   {
-    quote: "As a tailor, I needed a sewing machine and fabric to grow my business. Kechita gave me a loan with repayment terms I could manage. Now I employ two apprentices and serve customers from three counties.",
+    quote: "As a tailor, I needed a sewing machine and fabric to grow my business. Demo gave me a loan with repayment terms I could manage. Now I employ two apprentices and serve customers from three counties.",
     name: "Mercy Akinyi",
     role: "Tailor & Fashion Designer, Mombasa",
     growth: "Now employs 2 apprentices",
   },
   {
-    quote: "I was hesitant about taking a loan, but the Kechita team explained everything clearly. There were no hidden fees, no surprises. I invested in better farming inputs and my yield increased by 60%. I'm already planning my next season.",
+    quote: "I was hesitant about taking a loan, but the Demo team explained everything clearly. There were no hidden fees, no surprises. I invested in better farming inputs and my yield increased by 60%. I'm already planning my next season.",
     name: "Peter Kipchoge",
     role: "Smallholder Farmer, Eldoret",
     growth: "60% increase in crop yield",
@@ -53,7 +53,7 @@ const ImpactSection = () => {
             Real Stories of Growth, Resilience & Transformation
           </h2>
           <p className="text-muted-foreground text-lg font-body leading-relaxed">
-            Behind every loan is a story of determination, hard work, and dreams being realised. These are the entrepreneurs who trusted Kechita Capital — and the results speak for themselves.
+            Behind every loan is a story of determination, hard work, and dreams being realised. These are the entrepreneurs who trusted Demo Capital — and the results speak for themselves.
           </p>
         </div>
 
@@ -91,7 +91,7 @@ const ImpactSection = () => {
           <div className="space-y-6">
             {/* Image */}
             <div className="rounded-2xl overflow-hidden shadow-elevated">
-              <img src={communityWomen} alt="Women entrepreneurs empowered by Kechita" className="w-full h-[280px] object-cover" />
+              <img src={communityWomen} alt="Women entrepreneurs empowered by Demo" className="w-full h-[280px] object-cover" />
             </div>
 
             {testimonials.slice(3).map((t) => (

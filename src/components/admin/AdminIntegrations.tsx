@@ -304,8 +304,8 @@ const AdminIntegrations = () => {
               <Select value={form.sync_direction} onValueChange={v => setForm(f => ({ ...f, sync_direction: v }))}>
                 <SelectTrigger><SelectValue /></SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="inbound">Inbound (External → Kechita)</SelectItem>
-                  <SelectItem value="outbound">Outbound (Kechita → External)</SelectItem>
+                  <SelectItem value="inbound">Inbound (External → Demo)</SelectItem>
+                  <SelectItem value="outbound">Outbound (Demo → External)</SelectItem>
                   <SelectItem value="bidirectional">Bidirectional</SelectItem>
                 </SelectContent>
               </Select>

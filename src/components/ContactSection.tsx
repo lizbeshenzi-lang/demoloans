@@ -162,7 +162,7 @@ const ContactSection = () => {
               {[
                 { icon: MapPin, label: "Head Office", value: "Nairobi, Kenya", detail: "With branches across most towns" },
                 { icon: Phone, label: "Call Us", value: "+254 XXX XXX XXX", detail: "We're happy to talk" },
-                { icon: Mail, label: "Email Us", value: "info@kechitacapital.co.ke", detail: "We respond within 24 hours" },
+                { icon: Mail, label: "Email Us", value: "info@Democapital.co.ke", detail: "We respond within 24 hours" },
                 { icon: Clock, label: "Working Hours", value: "Mon - Fri: 8:00 AM - 5:00 PM", detail: "Sat: 8:00 AM - 12:00 PM" },
                 { icon: MessageCircle, label: "WhatsApp", value: "+254 XXX XXX XXX", detail: "Quick enquiries welcome" },
               ].map((item) => (

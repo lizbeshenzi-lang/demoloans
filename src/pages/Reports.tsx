@@ -113,7 +113,7 @@ const Reports = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
           <div className="flex items-center gap-3">
             <Link to="/">
-              <img src={logo} alt="Kechita" className="h-9 w-9 rounded-lg object-cover" />
+              <img src={logo} alt="Demo" className="h-9 w-9 rounded-lg object-cover" />
             </Link>
             <div>
               <h1 className="text-lg font-bold text-foreground">Reports</h1>

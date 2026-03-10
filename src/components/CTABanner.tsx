@@ -13,7 +13,7 @@ const CTABanner = () => {
           Your Business Deserves a Financial Partner That Truly Cares
         </h2>
         <p className="text-lg text-primary-foreground/80 font-body max-w-2xl mx-auto mb-8 leading-relaxed">
-          Join over 3,000 entrepreneurs who have trusted Kechita Capital to support their growth journey. Whether you're just starting out or looking to expand, we're here to help you every step of the way.
+          Join over 3,000 entrepreneurs who have trusted Demo Capital to support their growth journey. Whether you're just starting out or looking to expand, we're here to help you every step of the way.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a

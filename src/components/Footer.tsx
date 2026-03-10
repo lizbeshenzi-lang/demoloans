@@ -2,7 +2,7 @@ import logo from "@/assets/kechita-logo.jpg";
 
 const Footer = () => {
   return (
-    <footer className="bg-mular-navy border-t border-primary-foreground/10" role="contentinfo" aria-label="Site footer">
+    <footer className="bg-demo-navy border-t border-primary-foreground/10" role="contentinfo" aria-label="Site footer">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-10">
           <div>
@@ -16,7 +16,7 @@ const Footer = () => {
             <h4 className="font-semibold text-primary-foreground mb-4 font-display">Quick Links</h4>
             <div className="flex flex-col gap-2">
               {["About", "Mission & Vision", "Services", "How It Works", "Impact", "Blog", "Contact"].map((link) => (
-                <a key={link} href={`#${link.toLowerCase().replace(/ & /g, "").replace(/ /g, "")}`} className="text-primary-foreground/50 hover:text-mular-green text-sm transition-colors font-body">
+                <a key={link} href={`#${link.toLowerCase().replace(/ & /g, "").replace(/ /g, "")}`} className="text-primary-foreground/50 hover:text-demo-green text-sm transition-colors font-body">
                   {link}
                 </a>
               ))}
@@ -26,7 +26,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-primary-foreground mb-4 font-display">Contact</h4>
             <div className="flex flex-col gap-2 text-sm text-primary-foreground/50 font-body">
-              <span>info@mularcredit.com</span>
+              <span>info@demo.com</span>
               <span>+254 753 120 221</span>
               <span>Nairobi HQ • Branches Nationwide</span>
               <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
