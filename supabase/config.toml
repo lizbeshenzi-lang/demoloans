@@ -1,0 +1,31 @@
+project_id = "pverddjqxfuighwdmmzr"
+
+[functions.seed-test-data]
+verify_jwt = false
+
+[functions.executive-chat]
+verify_jwt = false
+
+[functions.scale-test-data]
+verify_jwt = false
+
+[functions.seed-staff]
+verify_jwt = false
+
+[functions.reset-test-passwords]
+verify_jwt = false
+
+[functions.run-scheduled-campaigns]
+verify_jwt = false
+
+[functions.ai-campaign-builder]
+verify_jwt = false
+
+[functions.data-sync]
+verify_jwt = false
+
+[functions.webhooks]
+verify_jwt = false
+
+[functions.sync-outbound]
+verify_jwt = false
