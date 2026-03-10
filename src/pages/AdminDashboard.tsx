@@ -94,7 +94,7 @@ const AdminDashboard = () => {
           supabase.from("loan_applications").select("*"),
           supabase.from("loan_repayments").select("*"),
         ]);
-        const report = generateLoanReport(lRes.data || [], rRes.data || [], "KECHITA CAPITAL — FULL PORTFOLIO REPORT");
+        const report = generateLoanReport(lRes.data || [], rRes.data || [], "MULAR CREDIT — FULL PORTFOLIO REPORT");
         downloadReport(report, "portfolio-report.txt");
       } else if (type === "repayments") {
         const { data } = await supabase.from("loan_repayments").select("*, loan_applications(full_name)");
@@ -166,9 +166,9 @@ const AdminDashboard = () => {
       )}>
         <div className="p-4 border-b border-border flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="Kechita" className="h-8 w-auto rounded" />
+            <img src={logo} alt="Mular Credit" className="h-8 w-auto rounded" />
             <div>
-              <span className="font-display font-bold text-sm text-foreground block">Kechita Capital</span>
+              <span className="font-display font-bold text-sm text-foreground block">Mular Credit</span>
               <span className="text-[10px] bg-destructive/10 text-destructive px-1.5 py-0.5 rounded font-semibold">ADMIN</span>
             </div>
           </Link>

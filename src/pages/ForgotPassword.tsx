@@ -46,7 +46,7 @@ const ForgotPassword = () => {
           {/* Logo */}
           <div className="text-center mb-8">
             <Link to="/">
-              <img src={logo} alt="Kechita Capital" className="h-16 w-auto mx-auto rounded-lg mb-4" />
+              <img src={logo} alt="Mular Credit" className="h-16 w-auto mx-auto rounded-lg mb-4" />
             </Link>
             <h1 className="text-2xl font-bold font-display text-foreground">Forgot Password?</h1>
             <p className="text-muted-foreground font-body mt-1">

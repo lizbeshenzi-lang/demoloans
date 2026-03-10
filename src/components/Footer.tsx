@@ -36,7 +36,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 mt-10 pt-6 text-center">
           <p className="text-primary-foreground/30 text-sm font-body">
-            © {new Date().getFullYear()} Kechita Capital Investment Limited. All rights reserved.
+            © {new Date().getFullYear()} Mular Credit. All rights reserved.
           </p>
         </div>
       </div>

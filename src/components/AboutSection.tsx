@@ -20,7 +20,7 @@ const AboutSection = () => {
           {/* Image */}
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-elevated">
-              <img src={entrepreneurWoman} alt="Entrepreneur supported by Kechita Capital" className="w-full h-[400px] md:h-[520px] object-cover" />
+              <img src={entrepreneurWoman} alt="Entrepreneur supported by Mular Credit" className="w-full h-[400px] md:h-[520px] object-cover" />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-gradient-primary text-primary-foreground p-6 rounded-xl shadow-elevated hidden md:block">
               <div className="text-3xl font-bold font-display">Your Growth</div>
@@ -34,18 +34,18 @@ const AboutSection = () => {
 
           {/* Content */}
           <div>
-            <span className="text-primary font-semibold text-sm tracking-wide uppercase">About Kechita Capital</span>
+            <span className="text-primary font-semibold text-sm tracking-wide uppercase">About Mular Credit</span>
             <h2 id="about-heading" className="text-3xl md:text-4xl font-bold text-foreground mt-3 mb-6 font-display leading-tight">
               A Financial Partner You Can Trust
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-4 font-body">
-              Kechita Capital Investment Limited is a registered financial services company dedicated to providing small business financing to entrepreneurs, traders, and everyday business owners. Founded with a deep commitment to financial inclusion, we exist to bridge the gap between ambition and opportunity.
+              Mular Credit is a financial services company dedicated to providing loans to entrepreneurs, traders, and everyday business owners. Founded with a deep commitment to financial inclusion, we exist to bridge the gap between ambition and opportunity.
             </p>
             <p className="text-muted-foreground text-base leading-relaxed mb-4 font-body">
               For over a decade, we have served hundreds of entrepreneurs across diverse sectors — from market traders and retail shop owners to tailors, farmers, and food vendors. We understand the unique challenges small businesses face, and we design our products to meet those needs with flexibility and fairness.
             </p>
             <p className="text-muted-foreground text-base leading-relaxed mb-8 font-body">
-              At Kechita Capital, we believe that when businesses grow, communities thrive. That's why we go beyond lending — offering financial literacy training, business advisory support, and a genuine partnership that helps our clients build sustainable, profitable enterprises.
+              At Mular Credit, we believe that when businesses grow, communities thrive. That's why we go beyond lending — offering financial literacy training, business advisory support, and a genuine partnership that helps our clients build sustainable, profitable enterprises.
             </p>
 
             <div className="flex items-center gap-4 p-4 bg-background rounded-xl shadow-card mb-2">
