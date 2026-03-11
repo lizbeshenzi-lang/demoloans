@@ -4,7 +4,7 @@ project_id = "pverddjqxfuighwdmmzr"
 verify_jwt = false
 
 [functions.executive-chat]
-verify_jwt = false
+verify_jwt = true
 
 [functions.scale-test-data]
 verify_jwt = false
@@ -16,16 +16,34 @@ verify_jwt = false
 verify_jwt = false
 
 [functions.run-scheduled-campaigns]
-verify_jwt = false
+verify_jwt = true
 
 [functions.ai-campaign-builder]
-verify_jwt = false
+verify_jwt = true
 
 [functions.data-sync]
-verify_jwt = false
+verify_jwt = true
 
 [functions.webhooks]
 verify_jwt = false
 
 [functions.sync-outbound]
+verify_jwt = true
+
+[functions.send-sms]
+verify_jwt = true
+
+[functions.sms-triggers]
+verify_jwt = true
+
+[functions.customer-lifecycle-alerts]
+verify_jwt = true
+
+[functions.seed-realistic-loans]
+verify_jwt = false
+
+[functions.seed-marketing-lead]
+verify_jwt = false
+
+[functions.seed-empty-regions]
 verify_jwt = false

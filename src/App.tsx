@@ -18,6 +18,7 @@ import MyLoans from "./pages/MyLoans";
 import RoleDashboard from "./pages/RoleDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
 import Apply from "./pages/Apply";
+import Contact from "./pages/Contact";
 import Reports from "./pages/Reports";
 import Careers from "./pages/Careers";
 import InterviewRoom from "./pages/InterviewRoom";
@@ -47,6 +48,7 @@ const App = () => (
             <Route path="/portal" element={<ProtectedRoute allowedRoles={["ceo", "gm", "regional_manager", "branch_manager", "loan_officer", "marketing_lead"]}><RoleDashboard /></ProtectedRoute>} />
             <Route path="/admin" element={<ProtectedRoute allowedRoles={["admin"]}><AdminDashboard /></ProtectedRoute>} />
             <Route path="/apply" element={<ProtectedRoute><Apply /></ProtectedRoute>} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/reports" element={<ProtectedRoute allowedRoles={["admin", "ceo", "gm", "regional_manager", "branch_manager", "marketing_lead"]}><Reports /></ProtectedRoute>} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/interview/:id" element={<InterviewRoom />} />

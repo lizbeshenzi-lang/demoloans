@@ -90,7 +90,7 @@ const ServicesSection = () => {
         {/* CTA */}
         <div className="text-center mt-12">
           <p className="text-muted-foreground font-body mb-4">Not sure which product is right for you? We're happy to help.</p>
-          <a href="#contact" className="bg-gradient-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold inline-flex items-center gap-2 hover:opacity-90 transition-opacity">
+          <a href="/contact" className="bg-gradient-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold inline-flex items-center gap-2 hover:opacity-90 transition-opacity">
             Talk to Our Team <ArrowRight className="w-5 h-5" />
           </a>
         </div>

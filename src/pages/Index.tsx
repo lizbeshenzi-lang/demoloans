@@ -10,11 +10,10 @@ import SignupIncentives from "@/components/SignupIncentives";
 import FAQSection from "@/components/FAQSection";
 import CTABanner from "@/components/CTABanner";
 import BlogSection from "@/components/BlogSection";
-import ContactSection from "@/components/ContactSection";
+import PublicContactSection from "@/components/PublicContactSection";
 import Footer from "@/components/Footer";
 import HomepageChatWidget from "@/components/HomepageChatWidget";
 import LoanCalculator from "@/components/LoanCalculator";
-import ScrollFadeIn from "@/components/ScrollFadeIn";
 
 const Index = () => {
   return (
@@ -25,18 +24,18 @@ const Index = () => {
       <Navbar />
       <main id="main-content" role="main">
         <HeroSection />
-        <ScrollFadeIn><AboutSection /></ScrollFadeIn>
-        <ScrollFadeIn><MissionVisionSection /></ScrollFadeIn>
-        <ScrollFadeIn><ServicesSection /></ScrollFadeIn>
-        <ScrollFadeIn><LoanCalculator /></ScrollFadeIn>
-        <ScrollFadeIn><ProcessSection /></ScrollFadeIn>
-        <ScrollFadeIn><ImpactSection /></ScrollFadeIn>
-        <ScrollFadeIn><TeamSection /></ScrollFadeIn>
-        <ScrollFadeIn><SignupIncentives /></ScrollFadeIn>
-        <ScrollFadeIn><FAQSection /></ScrollFadeIn>
-        <ScrollFadeIn><CTABanner /></ScrollFadeIn>
-        <ScrollFadeIn><BlogSection /></ScrollFadeIn>
-        <ScrollFadeIn><ContactSection /></ScrollFadeIn>
+        <AboutSection />
+        <MissionVisionSection />
+        <ServicesSection />
+        <LoanCalculator />
+        <ProcessSection />
+        <ImpactSection />
+        <TeamSection />
+        <SignupIncentives />
+        <FAQSection />
+        <CTABanner />
+        <BlogSection />
+        <PublicContactSection />
       </main>
       <Footer />
       <HomepageChatWidget />

@@ -82,7 +82,7 @@ const ProcessSection = () => {
           <p className="text-muted-foreground font-body mb-5">
             The entire process from application to disbursement can take as little as 3–5 business days. Don't let funding be the thing that holds your business back.
           </p>
-          <a href="#contact" className="bg-gradient-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold inline-flex items-center gap-2 hover:opacity-90 transition-opacity">
+          <a href="/contact" className="bg-gradient-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold inline-flex items-center gap-2 hover:opacity-90 transition-opacity">
             Start Your Application <ArrowRight className="w-5 h-5" />
           </a>
         </div>

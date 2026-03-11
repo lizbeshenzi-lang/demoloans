@@ -8,11 +8,16 @@ interface ScrollFadeInProps {
 
 const ScrollFadeIn = ({ children, className = "", delay = 0 }: ScrollFadeInProps) => {
   const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+
+    if (typeof IntersectionObserver === "undefined") {
+      // If the browser doesn't support IntersectionObserver, keep content visible
+      return;
+    }
 
     const observer = new IntersectionObserver(
       ([entry]) => {

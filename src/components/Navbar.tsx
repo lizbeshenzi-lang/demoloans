@@ -5,7 +5,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useLanguage } from "@/contexts/LanguageContext";
 import ThemeToggle from "@/components/ThemeToggle";
 import LanguageToggle from "@/components/LanguageToggle";
-import logo from "@/assets/kechita-logo.jpg";
+import logo from "@/assets/demo-loans-logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -13,30 +13,31 @@ const Navbar = () => {
   const { t } = useLanguage();
 
   const navLinks = [
-    { label: t("nav.home"), href: "#home" },
-    { label: t("nav.about"), href: "#about" },
-    { label: t("nav.mission"), href: "#mission" },
-    { label: t("nav.services"), href: "#services" },
-    { label: t("nav.process"), href: "#process" },
-    { label: t("nav.impact"), href: "#impact" },
-    { label: "Team", href: "#team" },
-    { label: t("nav.blog"), href: "#blog" },
-    { label: t("nav.contact"), href: "#contact" },
+    { label: t("nav.home"), href: "/#home" },
+    { label: t("nav.about"), href: "/#about" },
+    { label: t("nav.mission"), href: "/#mission" },
+    { label: t("nav.services"), href: "/#services" },
+    { label: t("nav.process"), href: "/#process" },
+    { label: t("nav.impact"), href: "/#impact" },
+    { label: "Team", href: "/#team" },
+    { label: t("nav.blog"), href: "/#blog" },
+    { label: t("nav.contact"), href: "/#contact" },
     { label: "Careers", href: "/careers", isRoute: true },
   ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border" aria-label="Main navigation">
       <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-4">
-        <a href="#home" className="flex items-center gap-2" aria-label="Demo Credit Limited - Go to homepage">
+        <Link to="/" className="flex items-center gap-2" aria-label="Demo Loans - Go to homepage">
           <img src={logo} alt="" className="h-12 md:h-14 w-auto" aria-hidden="true" />
-          <span className="sr-only">Demo Credit Limited</span>
-        </a>
+          <span className="sr-only">Demo Loans</span>
+        </Link>
 
         {/* Desktop */}
         <div className="hidden lg:flex items-center gap-6" role="menubar">
-          {navLinks.map((link) => (
-            link.isRoute ? (
+          {navLinks.map((link) => {
+            if (link.isRoute) {
+              return (
               <Link
                 key={link.href}
                 to={link.href}
@@ -45,7 +46,10 @@ const Navbar = () => {
               >
                 {link.label}
               </Link>
-            ) : (
+              );
+            }
+
+            return (
               <a
                 key={link.href}
                 href={link.href}
@@ -54,8 +58,8 @@ const Navbar = () => {
               >
                 {link.label}
               </a>
-            )
-          ))}
+            );
+          })}
           
           <LanguageToggle />
           <ThemeToggle />
@@ -111,8 +115,9 @@ const Navbar = () => {
       {open && (
         <div id="mobile-menu" className="lg:hidden bg-background border-b border-border animate-fade-in" role="menu" aria-label="Mobile navigation">
           <div className="container mx-auto px-4 py-4 flex flex-col gap-3">
-            {navLinks.map((link) => (
-              link.isRoute ? (
+            {navLinks.map((link) => {
+              if (link.isRoute) {
+                return (
                 <Link
                   key={link.href}
                   to={link.href}
@@ -121,7 +126,10 @@ const Navbar = () => {
                 >
                   {link.label}
                 </Link>
-              ) : (
+                );
+              }
+
+              return (
                 <a
                   key={link.href}
                   href={link.href}
@@ -130,8 +138,8 @@ const Navbar = () => {
                 >
                   {link.label}
                 </a>
-              )
-            ))}
+              );
+            })}
 
             <div className="flex items-center gap-2 py-2">
               <LanguageToggle />
