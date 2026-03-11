@@ -2,7 +2,7 @@ import logo from "@/assets/demo-loans-logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-demo-navy border-t border-primary-foreground/10 mt-16" role="contentinfo" aria-label="Site footer">
+    <footer className="bg-navy border-t border-primary-foreground/10 mt-16" role="contentinfo" aria-label="Site footer">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-10">
           <div>
@@ -20,7 +20,7 @@ const Footer = () => {
                 <a
                   key={link}
                   href={`/#${link.toLowerCase().replace(/ & /g, "").replace(/ /g, "")}`}
-                  className="text-primary-foreground/50 hover:text-demo-green text-sm transition-colors font-body"
+                  className="text-primary-foreground/50 hover:text-kc-green text-sm transition-colors font-body"
                 >
                   {link}
                 </a>
