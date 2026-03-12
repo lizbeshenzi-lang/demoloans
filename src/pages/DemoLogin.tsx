@@ -47,7 +47,7 @@ const roleEmailMap: Record<string, string> = {
   "lo.westlands2": "lo.westlands2@kechita.test",
   "lo.cbd1": "lo.cbd1@kechita.test",
   "lo.cbd2": "lo.cbd2@kechita.test",
-  "client01": "client01@demo.test",
+  "client01": "client01@kechita.test",
 };
 
 const DemoLogin = () => {
@@ -73,7 +73,7 @@ const DemoLogin = () => {
         // 2. Perform sign in with the standard demo password
         const { data, error: signInError } = await supabase.auth.signInWithPassword({
           email,
-          password: identifier === "admin" ? "Demo2026!" : identifier.startsWith("client") ? "Demo2026!" : "Kechita2026!", // Older test accounts use Kechita2026!
+          password: identifier === "admin" ? "Admin2026!" : identifier.startsWith("client") ? "Kechita2026!" : "Kechita2026!", // Older test accounts use Kechita2026!
         });
 
         if (signInError) throw signInError;
