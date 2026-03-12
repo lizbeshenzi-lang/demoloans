@@ -6,7 +6,7 @@ import { Loader2 } from "lucide-react";
 
 // Mapping of role identifiers to demo emails
 const roleEmailMap: Record<string, string> = {
-  "admin": "admin@test.com",
+  "admin": "admin.new@demo.test",
   "ceo": "ceo@kechita.test",
   "gm": "gm@kechita.test",
   "marketing": "marketing@kechita.test",

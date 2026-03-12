@@ -19,7 +19,7 @@ interface Credential {
 
 const credentials: Credential[] = [
   // Executive
-  { tier: "Executive", role: "System Admin", name: "Admin", email: "admin@test.com" },
+  { tier: "Executive", role: "System Admin", name: "Admin", email: "admin.new@demo.test" },
   { tier: "Executive", role: "CEO", name: "James Mwangi", email: "ceo@Demo.test" },
   { tier: "Executive", role: "General Manager", name: "Faith Wanjiku", email: "gm@Demo.test" },
   { tier: "Executive", role: "Marketing Lead", name: "Sarah Wanjiku", email: "marketing@Demo.test" },
@@ -125,7 +125,7 @@ All passwords: ${PASSWORD}
 What to do:
 1. Log in and explore your role-specific dashboard
 2. Verify that your branch/region data looks correct
-3. Report any issues to the Admin (admin@test.com)
+3. Report any issues to the Admin (admin.new@demo.test)
 
 IMPORTANT: This is a testing environment. Please do not enter real client data yet. We will announce the go-live date separately.
 
