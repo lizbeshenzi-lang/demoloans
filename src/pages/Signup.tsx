@@ -34,9 +34,28 @@ const Signup = () => {
     return cleaned;
   };
 
+  const checkNationalIdExists = async (id: string) => {
+    if (!id) return false;
+    const { data, error } = await supabase
+      .from('profiles')
+      .select('id')
+      .eq('national_id', id)
+      .maybeSingle();
+    
+    // Ignore permissions errors during the check, but if we found an ID, it definitely exists.
+    return !!data;
+  };
+
   const handleEmailSignup = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+
+    const nationalIdTaken = await checkNationalIdExists(nationalId);
+    if (nationalIdTaken) {
+      toast({ title: "Signup failed", description: "This National ID is already registered to another account.", variant: "destructive" });
+      setLoading(false);
+      return;
+    }
 
     const { data, error } = await supabase.auth.signUp({
       email,
@@ -62,6 +81,14 @@ const Signup = () => {
   const handlePhoneSignup = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    
+    const nationalIdTaken = await checkNationalIdExists(nationalId);
+    if (nationalIdTaken) {
+      toast({ title: "Signup failed", description: "This National ID is already registered to another account.", variant: "destructive" });
+      setLoading(false);
+      return;
+    }
+
     const formattedPhone = formatPhone(phone);
 
     const { data, error } = await supabase.auth.signUp({
