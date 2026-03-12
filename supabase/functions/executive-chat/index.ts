@@ -111,7 +111,7 @@ serve(async (req) => {
     const totalPaid = repayments.reduce((s: number, r: any) => s + Number(r.amount_paid || 0), 0);
     const overdueCount = repayments.filter((r: any) => r.status === "overdue").length;
 
-    const systemPrompt = `You are Kechita Capital's AI Executive Assistant. You help the CEO and GM analyze the loan portfolio.
+    const systemPrompt = `You are Demo Capital's AI Executive Assistant. You help the CEO and GM analyze the loan portfolio.
 Answer questions using the data provided. Be concise, use numbers and percentages. Format with markdown tables when comparing branches/products.
 If asked about something not in the data, say so clearly.
 

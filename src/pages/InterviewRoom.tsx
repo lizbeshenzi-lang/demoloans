@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { Video, VideoOff, Mic, MicOff, PhoneOff, FileText, Loader2 } from "lucide-react";
-import logo from "@/assets/kechita-logo.jpg";
+import logo from "@/assets/demo-logo.jpg";
 
 const InterviewRoom = () => {
   const { id } = useParams<{ id: string }>();

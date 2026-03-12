@@ -147,7 +147,7 @@ async function processIntegration(
 
           const payload = (loans || []).map((loan: any) => ({
             external_id: loan.external_id,
-            kechita_id: loan.id,
+            demo_id: loan.id,
             full_name: loan.full_name,
             phone: loan.phone,
             email: loan.email,
@@ -203,8 +203,8 @@ async function processIntegration(
           if (error) throw error;
 
           const payload = (repayments || []).map((r: any) => ({
-            kechita_id: r.id,
-            loan_kechita_id: r.loan_id,
+            demo_id: r.id,
+            loan_demo_id: r.loan_id,
             loan_external_id: r.loan_applications?.external_id || null,
             client_name: r.loan_applications?.full_name || null,
             client_phone: r.loan_applications?.phone || null,

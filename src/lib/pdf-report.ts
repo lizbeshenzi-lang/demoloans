@@ -91,7 +91,7 @@ export function generateLoanSummaryPDF(loans: LoanData[], repayments: RepaymentD
   const html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>Loan Portfolio Summary</title><style>${STYLES}</style></head><body>
     <div class="header">
       <h1>📊 Loan Portfolio Summary</h1>
-      <div class="meta">Kechita Capital Investment Ltd<br/>Generated: ${now}</div>
+      <div class="meta">demo Capital Investment Ltd<br/>Generated: ${now}</div>
     </div>
     <div class="stats-grid">
       <div class="stat-card"><div class="value">${totalLoans}</div><div class="label">Total Applications</div></div>
@@ -116,7 +116,7 @@ export function generateLoanSummaryPDF(loans: LoanData[], repayments: RepaymentD
         </tr>`).join("")}
       </table>
     </div>
-    <div class="footer">Kechita Capital Investment Limited — Confidential Report</div>
+    <div class="footer">demo Capital Investment Limited — Confidential Report</div>
   </body></html>`;
 
   openPrintWindow(html);
@@ -132,7 +132,7 @@ export function generateRepaymentSchedulePDF(loan: LoanData, repayments: Repayme
   const html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>Repayment Schedule - ${loan.full_name}</title><style>${STYLES}</style></head><body>
     <div class="header">
       <h1>📅 Repayment Schedule</h1>
-      <div class="meta">Kechita Capital Investment Ltd<br/>Generated: ${now}</div>
+      <div class="meta">demo Capital Investment Ltd<br/>Generated: ${now}</div>
     </div>
     <div class="section">
       <h2>Client Details</h2>
@@ -163,7 +163,7 @@ export function generateRepaymentSchedulePDF(loan: LoanData, repayments: Repayme
         </tr>`).join("")}
       </table>
     </div>
-    <div class="footer">Kechita Capital Investment Limited — Confidential Report</div>
+    <div class="footer">demo Capital Investment Limited — Confidential Report</div>
   </body></html>`;
 
   openPrintWindow(html);
@@ -191,7 +191,7 @@ export function generateBranchPerformancePDF(
   const html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>Branch Performance Report</title><style>${STYLES}</style></head><body>
     <div class="header">
       <h1>🏢 Branch Performance Report</h1>
-      <div class="meta">Kechita Capital Investment Ltd<br/>Generated: ${now}</div>
+      <div class="meta">demo Capital Investment Ltd<br/>Generated: ${now}</div>
     </div>
     <div class="section">
       <h2>Performance by Branch</h2>
@@ -204,7 +204,7 @@ export function generateBranchPerformancePDF(
         </tr>`).join("")}
       </table>
     </div>
-    <div class="footer">Kechita Capital Investment Limited — Confidential Report</div>
+    <div class="footer">demo Capital Investment Limited — Confidential Report</div>
   </body></html>`;
 
   openPrintWindow(html);

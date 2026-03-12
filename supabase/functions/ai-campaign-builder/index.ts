@@ -18,7 +18,7 @@ serve(async (req) => {
 
     const { campaign_type, target_audience, context_data, custom_instructions } = await req.json();
 
-    const systemPrompt = `You are a marketing SMS campaign specialist for Kechita Capital, a microfinance institution in Kenya.
+    const systemPrompt = `You are a marketing SMS campaign specialist for Demo Capital, a microfinance institution in Kenya.
 You generate professional, culturally appropriate SMS templates for different campaign types.
 
 Guidelines:
@@ -27,7 +27,7 @@ Guidelines:
 - Include {client_name} placeholder for personalization
 - Include {amount}, {due_date}, {branch_name}, {loan_officer} placeholders where relevant
 - For recovery messages, be firm but respectful — never threatening
-- Always include "Kechita Capital" branding
+- Always include "Demo Capital" branding
 - Generate 3 template variations: formal, friendly, and urgent
 
 Return a JSON object with this structure:

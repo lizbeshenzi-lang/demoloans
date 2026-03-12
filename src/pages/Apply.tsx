@@ -5,7 +5,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/kechita-logo.jpg";
+import logo from "@/assets/demo-logo.jpg";
 
 interface BranchOption {
   id: string;

@@ -48,7 +48,7 @@ export function showBrowserNotification(title: string, body: string, options?: {
     const notif = new Notification(title, {
       body,
       icon: options?.icon || '/pwa-192x192.png',
-      tag: options?.tag || 'kechita-notif',
+      tag: options?.tag || 'demo-notif',
       badge: '/pwa-192x192.png',
       requireInteraction: false,
     });

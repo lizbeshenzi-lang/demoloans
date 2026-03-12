@@ -5,7 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import NotificationBell from "@/components/dashboard/NotificationBell";
-import logo from "@/assets/kechita-logo.jpg";
+import logo from "@/assets/demo-logo.jpg";
 import { toast } from "sonner";
 import {
   FileText, Download, LogOut, User, BarChart3, Calendar, Building2, Loader2, ArrowLeft

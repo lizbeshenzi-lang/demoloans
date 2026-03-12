@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import logo from "@/assets/kechita-logo.jpg";
+import logo from "@/assets/demo-logo.jpg";
 import { Mail, Lock, User, Loader2, Phone, CreditCard } from "lucide-react";
 
 type AuthMethod = "email" | "phone";

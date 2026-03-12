@@ -84,8 +84,8 @@ export default defineConfig(({ mode }) => ({
         navigateFallbackDenylist: [/^\/~oauth/],
       },
       manifest: {
-        name: "Kechita Capital Investment Limited",
-        short_name: "Kechita",
+        name: "Demo Capital Investment Limited",
+        short_name: "Demo",
         description: "Accessible financing for entrepreneurs and small businesses in Kenya",
         theme_color: "#1a8fcb",
         background_color: "#ffffff",

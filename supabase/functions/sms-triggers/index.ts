@@ -60,25 +60,25 @@ async function sendViaAT(to: string, body: string) {
 
 const TEMPLATES = {
   approval_welcome: (name: string, amount: string) =>
-    `Congratulations ${name}! Your Kechita Capital financing of KES ${amount} has been approved. Your Loan Officer will contact you shortly with disbursement details. Thank you for choosing Kechita Capital!`,
+    `Congratulations ${name}! Your Demo Capital financing of KES ${amount} has been approved. Your Loan Officer will contact you shortly with disbursement details. Thank you for choosing Demo Capital!`,
 
   reminder_2days: (name: string, amount: string, dueDate: string) =>
-    `Dear ${name}, your Kechita Capital repayment of KES ${amount} is due on ${dueDate}. Please ensure timely payment to maintain your good standing. Thank you!`,
+    `Dear ${name}, your Demo Capital repayment of KES ${amount} is due on ${dueDate}. Please ensure timely payment to maintain your good standing. Thank you!`,
 
   reminder_due_today: (name: string, amount: string) =>
-    `Hi ${name}, your Kechita Capital repayment of KES ${amount} is due TODAY. Please make your payment to avoid any penalties. Thank you!`,
+    `Hi ${name}, your Demo Capital repayment of KES ${amount} is due TODAY. Please make your payment to avoid any penalties. Thank you!`,
 
   overdue_mild: (name: string, amount: string, days: number) =>
     `Dear ${name}, your repayment of KES ${amount} is ${days} day(s) overdue. Please settle your payment as soon as possible. Contact your Loan Officer if you need assistance.`,
 
   overdue_warning: (name: string, amount: string, days: number) =>
-    `NOTICE: ${name}, your Kechita Capital repayment of KES ${amount} is now ${days} days overdue. Failure to pay may result in penalties. Please contact us immediately.`,
+    `NOTICE: ${name}, your Demo Capital repayment of KES ${amount} is now ${days} days overdue. Failure to pay may result in penalties. Please contact us immediately.`,
 
   overdue_escalation: (name: string, amount: string, days: number) =>
-    `URGENT: ${name}, your account with Kechita Capital is ${days} days in arrears (KES ${amount}). This matter has been escalated to management. Please settle immediately to avoid further action.`,
+    `URGENT: ${name}, your account with Demo Capital is ${days} days in arrears (KES ${amount}). This matter has been escalated to management. Please settle immediately to avoid further action.`,
 
   overdue_final: (name: string, amount: string, days: number) =>
-    `FINAL NOTICE: ${name}, your Kechita Capital account is ${days} days overdue (KES ${amount}). Recovery proceedings will commence if payment is not received within 48 hours. Call us now.`,
+    `FINAL NOTICE: ${name}, your Demo Capital account is ${days} days overdue (KES ${amount}). Recovery proceedings will commence if payment is not received within 48 hours. Call us now.`,
 };
 
 // ── Record SMS in database ────────────────────────────────────────

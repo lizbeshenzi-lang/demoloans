@@ -8,10 +8,10 @@ import teamMarketing from "@/assets/team-marketing.jpg";
 import { Linkedin, Twitter, Star } from "lucide-react";
 
 const founder = {
-  name: "Simon Mutunga",
+  name: "James Mwangi",
   role: "Founder & Chief Executive Officer",
   img: teamCeo,
-  bio: "A visionary leader with over 15 years in financial services across East Africa, Simon founded Demo Capital with a singular mission: to democratize access to capital for everyday entrepreneurs. His relentless drive to empower underserved communities has transformed Demo from a single-branch operation into a nationwide force powering over 3,000 businesses. Under his leadership, Demo has disbursed over KSh 300 million and earned a reputation as the most trusted micro-lending partner in Kenya. Simon's philosophy is simple — when you invest in people, the returns are limitless.",
+  bio: "A visionary leader with over 15 years in financial services across East Africa, James founded Demo Capital with a singular mission: to democratize access to capital for everyday entrepreneurs. His relentless drive to empower underserved communities has transformed Demo from a single-branch operation into a nationwide force powering over 3,000 businesses. Under his leadership, Demo has disbursed over KSh 300 million and earned a reputation as the most trusted micro-lending partner in Kenya. James's philosophy is simple — when you invest in people, the returns are limitless.",
 };
 
 const team = [

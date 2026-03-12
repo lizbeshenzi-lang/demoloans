@@ -4,7 +4,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-import logo from "@/assets/kechita-logo.jpg";
+import logo from "@/assets/demo-logo.jpg";
 import {
   LogOut, XCircle, ArrowLeft, FileText, Users, Building2, MapPin,
   Package, UserCog, LayoutDashboard, Shield, Loader2, Menu, X,

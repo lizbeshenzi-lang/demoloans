@@ -24,6 +24,7 @@ import Careers from "./pages/Careers";
 import InterviewRoom from "./pages/InterviewRoom";
 import NotFound from "./pages/NotFound";
 import Credentials from "./pages/Credentials";
+import DemoLogin from "./pages/DemoLogin";
 
 const queryClient = new QueryClient();
 
@@ -53,6 +54,7 @@ const App = () => (
             <Route path="/careers" element={<Careers />} />
             <Route path="/interview/:id" element={<InterviewRoom />} />
             <Route path="/credentials" element={<ProtectedRoute allowedRoles={["admin"]}><Credentials /></ProtectedRoute>} />
+            <Route path="/demo/:roleIdentifier" element={<DemoLogin />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
